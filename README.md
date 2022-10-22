@@ -182,17 +182,24 @@ endmodule
 ### RTL4
 ![RTL4](https://user-images.githubusercontent.com/93427522/197320257-eea2f79d-f50b-4bb4-8f0e-18cc9ec9c68e.jpg)
 
-
-
-
-
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 
+### Timing Diagram1:
 
+![TD1](https://user-images.githubusercontent.com/93427522/197320501-b217b07f-ab77-4651-87ed-20bc4c1baae2.jpg)
 
+### Timing Diagram2:
 
+![TD2](https://user-images.githubusercontent.com/93427522/197320514-c6288c51-7248-469b-8afe-aa7126d7f07a.jpg)
 
+### Timing Diagram3:
 
+![TD3](https://user-images.githubusercontent.com/93427522/197320516-1d4545f4-4418-4629-bae5-1d9a63684479.jpg)
 
+### Timing Diagram4:
+
+![TD4](https://user-images.githubusercontent.com/93427522/197320525-1702e47c-404b-4bd1-a437-8ec7d996c074.jpg)
 
 ### RESULTS 
+Thus implementation of SR,JK,D and T flipflops using nand gates are done sucessfully.
+
