@@ -1,10 +1,12 @@
 # Experiment--05-Implementation-of-flipflops-using-verilog
-### AIM: To implement all the flipflops using verilog and validating their functionality using their functional tables
-### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
-### SOFTWARE REQUIRED:   Quartus prime
-### THEORY 
-SR Flip-Flop
-SR flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, SR latch operates with enable signal. The circuit diagram of SR flip-flop is shown in the following figure.
+# AIM: 
+To implement all the flipflops using verilog and validating their functionality using their functional tables
+## HARDWARE REQUIRED: 
+ – PC, Cyclone II , USB flasher
+## SOFTWARE REQUIRED:   
+Quartus prime
+## THEORY 
+SR Flip-Flop SR flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, SR latch operates with enable signal. The circuit diagram of SR flip-flop is shown in the following figure.
 
 ![image](https://user-images.githubusercontent.com/36288975/167910294-bb550548-b1dc-4cba-9044-31d9037d476b.png)
 
@@ -31,7 +33,7 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 Q(t+1)=S+R′Q(t)Q(t+1)=S+R′Q(t)
 
 
-### D Flip-Flop
+## D Flip-Flop
 D flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, D latch operates with enable signal. That means, the output of D flip-flop is insensitive to the changes in the input, D except for active transition of the clock signal. The circuit diagram of D flip-flop is shown in the following figure.
  
 This circuit has single input D and two outputs Qtt & Qtt’. The operation of D flip-flop is similar to D Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.
@@ -52,7 +54,7 @@ Qt+1t+1 = D
 Next state of D flip-flop is always equal to data input, D for every positive transition of the clock signal. Hence, D flip-flops can be used in registers, shift registers and some of the counters.
 
 
-### JK Flip-Flop
+## JK Flip-Flop
 JK flip-flop is the modified version of SR flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of JK flip-flop is shown in the following figure.
 ![image](https://user-images.githubusercontent.com/36288975/167910378-d2d984a7-2815-4d17-8c41-ee4bdf59ec24.png) 
 
@@ -79,7 +81,7 @@ Q(t+1)=JQ(t)′+K′Q(t)Q(t+1)=JQ(t)′+K′Q(t)
 
 
 
-### T Flip-Flop
+## T Flip-Flop
 T flip-flop is the simplified version of JK flip-flop. It is obtained by connecting the same input ‘T’ to both inputs of JK flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of T flip-flop is shown in the following figure.
 
 ![image](https://user-images.githubusercontent.com/36288975/167911534-5f3c445d-bc68-46e2-9a9c-7efce5febc60.png)
@@ -101,7 +103,7 @@ From the above characteristic table, we can directly write the next state equati
 Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
 
-### Procedure
+## Procedure
 1.Using nand gates and wires construct sr flip flop.
 
 2.Repeat same steps to construct JK,D,T flipflops.
@@ -111,13 +113,12 @@ Q(t+1)=T′Q(t)+TQ(t)′
 4.End the program.
 
 
-
-### PROGRAM 
-/*
-Program for flipflops  and verify its truth table in quartus using Verilog programming.
-### Developed by:challa sandeep
-### RegisterNumber:212221240011
-*/
+### PROGRAM:
+```
+Program for flipflops  and verify its truth table in quartus using Verilog programming
+Developed by:jeevithha
+RegisterNumber:22009398
+```
 ### program1:
 ```
 module flipflop(S,R,clock,Q,Qbar);
@@ -169,37 +170,35 @@ nand(Qbar,B,Q);
 endmodule
 ```
 
-### RTL LOGIC FOR FLIPFLOPS 
+## RTL LOGIC FOR FLIPFLOPS 
 ### RTL1
-![RTL1](https://user-images.githubusercontent.com/93427522/197320248-a849cfd4-a09b-4f3c-9031-6897cadf4fa8.jpg)
+![](1.jpg)
 
 ### RTL2
-![RTL2](https://user-images.githubusercontent.com/93427522/197320253-73a4dbbe-6d9a-4ca7-963b-486708f68826.jpg)
+![](2.jpg)
 
 ### RTL3
-![RTL3](https://user-images.githubusercontent.com/93427522/197320254-dd0be15c-c1c1-446f-8f88-049c49623851.jpg)
+![](3.jpg)
 
 ### RTL4
-![RTL4](https://user-images.githubusercontent.com/93427522/197320257-eea2f79d-f50b-4bb4-8f0e-18cc9ec9c68e.jpg)
+![](4.jpg)
 
-### TIMING DIGRAMS FOR FLIP FLOPS 
+## TIMING DIGRAMS FOR FLIP FLOPS 
 
 ### Timing Diagram1:
 
-![TD1](https://user-images.githubusercontent.com/93427522/197320501-b217b07f-ab77-4651-87ed-20bc4c1baae2.jpg)
+![](5.jpg)
 
 ### Timing Diagram2:
 
-![TD2](https://user-images.githubusercontent.com/93427522/197320514-c6288c51-7248-469b-8afe-aa7126d7f07a.jpg)
-
+![](6.jpg)
 ### Timing Diagram3:
 
-![TD3](https://user-images.githubusercontent.com/93427522/197320516-1d4545f4-4418-4629-bae5-1d9a63684479.jpg)
+![](7.jpg)
 
 ### Timing Diagram4:
 
-![TD4](https://user-images.githubusercontent.com/93427522/197320525-1702e47c-404b-4bd1-a437-8ec7d996c074.jpg)
-
-### RESULTS 
+![](8.jpg)
+## RESULTS 
 Thus implementation of SR,JK,D and T flipflops using nand gates are done sucessfully.
 
